@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "question": "Qual elemento HTML é usado para criar um título de nível mais alto?",
+    "options": ["<h1>", "<h6>", "<head>", "<title>"],
+    "correctAnswer": "<h1>"
+  },
+  {
+    "id": 2,
+    "question": "Qual propriedade CSS é usada para alterar a cor do texto?",
+    "options": ["text-color", "font-color", "color", "text-style"],
+    "correctAnswer": "color"
+  },
+  {
+    "id": 3,
+    "question": "Qual função JavaScript é usada para exibir uma mensagem em uma caixa de alerta?",
+    "options": ["alert()", "message()", "prompt()", "log()"],
+    "correctAnswer": "alert()"
+  },
+  {
+    "id": 4,
+    "question": "Qual atributo HTML é usado para definir um link para uma página externa?",
+    "options": ["href", "src", "link", "url"],
+    "correctAnswer": "href"
+  },
+  {
+    "id": 5,
+    "question": "Qual propriedade CSS é usada para adicionar espaçamento interno em torno do conteúdo de um elemento?",
+    "options": ["padding", "margin", "border", "space"],
+    "correctAnswer": "padding"
+  },
+  {
+    "id": 6,
+    "question": "Qual método JavaScript é usado para remover o último elemento de um array?",
+    "options": ["remove()", "pop()", "delete()", "splice()"],
+    "correctAnswer": "pop()"
+  },
+  {
+    "id": 7,
+    "question": "Qual tag HTML é usada para criar uma lista não ordenada?",
+    "options": ["<ol>", "<list>", "<ul>", "<unordered>"],
+    "correctAnswer": "<ul>"
+  },
+  {
+    "id": 8,
+    "question": "Qual propriedade CSS é usada para definir o tamanho da fonte do texto?",
+    "options": ["text-size", "font-size", "size", "text-style"],
+    "correctAnswer": "font-size"
+  },
+  {
+    "id": 9,
+    "question": "Qual construção JavaScript é usada para executar um bloco de código repetidamente?",
+    "options": ["if-else", "for loop", "function", "switch"],
+    "correctAnswer": "for loop"
+  },
+  {
+    "id": 10,
+    "question": "Qual elemento HTML é usado para criar uma caixa de seleção?",
+    "options": [
+      "<input type='checkbox'>",
+      "<select>",
+      "<checkbox>",
+      "<input type='select'>"
+    ],
+    "correctAnswer": "<input type='checkbox'>"
+  }
+]
