@@ -14,13 +14,13 @@
   {
     "id": 3,
     "question": "Qual função JavaScript é usada para exibir uma mensagem em uma caixa de alerta?",
-    "options": ["alert()", "message()", "prompt()", "log()"],
+    "options": ["log()", "message()", "prompt()", "alert()"],
     "correctAnswer": "alert()"
   },
   {
     "id": 4,
     "question": "Qual atributo HTML é usado para definir um link para uma página externa?",
-    "options": ["href", "src", "link", "url"],
+    "options": ["src", "href", "link", "url"],
     "correctAnswer": "href"
   },
   {
@@ -32,7 +32,7 @@
   {
     "id": 6,
     "question": "Qual método JavaScript é usado para remover o último elemento de um array?",
-    "options": ["remove()", "pop()", "delete()", "splice()"],
+    "options": ["remove()", "splice()", "delete()", "pop()"],
     "correctAnswer": "pop()"
   },
   {
@@ -50,18 +50,48 @@
   {
     "id": 9,
     "question": "Qual construção JavaScript é usada para executar um bloco de código repetidamente?",
-    "options": ["if-else", "for loop", "function", "switch"],
-    "correctAnswer": "for loop"
+    "options": ["if-else", "loop for", "function", "switch"],
+    "correctAnswer": "loop for"
   },
   {
     "id": 10,
     "question": "Qual elemento HTML é usado para criar uma caixa de seleção?",
     "options": [
-      "<input type='checkbox'>",
       "<select>",
       "<checkbox>",
+      "<input type='checkbox'>",
       "<input type='select'>"
     ],
     "correctAnswer": "<input type='checkbox'>"
+  },
+  {
+    "id": 11,
+    "question": "Qual elemento HTML é usado para criar um hyperlink?",
+    "options": ["<link>", "<a>", "<href>", "<hlink>"],
+    "correctAnswer": "<a>"
+  },
+  {
+    "id": 12,
+    "question": "Qual propriedade CSS é usada para definir a cor de fundo de um elemento?",
+    "options": ["background-color", "color", "background", "bgcolor"],
+    "correctAnswer": "background-color"
+  },
+  {
+    "id": 13,
+    "question": "Qual método JavaScript é usado para adicionar um novo elemento ao final de um array?",
+    "options": ["insert()", "add()", "push()", "append()"],
+    "correctAnswer": "push()"
+  },
+  {
+    "id": 14,
+    "question": "Qual tag HTML é usada para criar uma lista ordenada?",
+    "options": ["<list>", "<ul>", "<ordered>", "<ol>"],
+    "correctAnswer": "<ol>"
+  },
+  {
+    "id": 15,
+    "question": "Qual propriedade CSS é usada para alinhar o texto ao centro de um elemento?",
+    "options": [ "align", "text-align", "center", "text-center"],
+    "correctAnswer": "text-align"
   }
 ]
