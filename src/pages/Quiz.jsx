@@ -61,7 +61,7 @@ function Quiz(){
                     <img src="https://img.icons8.com/clouds/100/test-passed.png" alt="" />
                     <h1>Você teve <br/> {answers.filter(ans => ans===true).length} acertos!</h1>
                     <Link to="/">
-                        <button onClick={() => console.log(answers)}>Outra Vez!</button>
+                        <button onClick={() => console.log(answers)}>Tentar outra vez!</button>
                     </Link>
                 </div>
             )}
