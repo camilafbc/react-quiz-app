@@ -30,7 +30,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* width: 600px; */
   width: 90vw;
   max-width: 600px;
   background-color: var(--white-color);
@@ -52,14 +51,13 @@ body {
 
 .home_container > p {
   font-size: 1.5rem;
-  /* width: 350px; */
   text-align: center;
   color: var(--text-color);
   margin: 1rem 0 2rem;
 }
 
 .home_container > a > button,
-.result_container > a > button {
+.result_container > button {
   width: 200px;
   font-size: 1.125rem;
   padding: 0.5rem 1rem;
@@ -72,7 +70,7 @@ body {
 }
 
 .home_container > a > button:hover,
-.result_container > a > button :hover {
+.result_container > button :hover {
   transform: scale(95%);
 }
 
@@ -112,8 +110,6 @@ button {
 }
 
 .option:hover {
-  /* transition: 0.4s; */
-  /* transform: scale(101%); */
   background-color: var(--main-color);
 }
 
@@ -125,26 +121,6 @@ button {
 .option:focus,
 .option::after {
   background-color: var(--main-color);
-}
-
-.next {
-  width: 100px;
-  align-self: end;
-  font-size: 1rem;
-  border: none;
-  color: var(--main-color);
-  font-weight: bold;
-}
-
-.next:hover {
-  transition: 0.4s;
-  color: var(--hover-color);
-}
-
-.next:active,
-.next:focus,
-.next::after {
-  color: var(--hover-color);
 }
 
 .result_container > h1 {

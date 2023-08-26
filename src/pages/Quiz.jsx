@@ -1,36 +1,19 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import questions from "../database.json";
-
+import useQuiz from "../hooks/useQuiz";
 
 function Quiz(){
 
-    const [result, setResult] = useState(false)
-    const [currentQuestion, setCurrentQuestion] = useState(0)
-    const [answers, setAnswers] = useState([])
+    const { result, answers, checkAnswer, handleQuestion, currentQuestion } = useQuiz()
 
-    const handleQuestion = () => {
-        
-        if(answers.length < currentQuestion + 1) return
-        
-        if(currentQuestion < questions.length - 1){
-            setCurrentQuestion((currentState) => currentState + 1)
-        } else {
-            setResult(true)
-        }
+    const navigate = useNavigate()
+    const backToHome = () => {
+        navigate('/')
     }
-
-    const checkAnswer = (resposta) => {
-        if(resposta === questions[currentQuestion].correctAnswer){
-            setAnswers([...answers, true])
-        } else {
-            setAnswers([...answers, false])
-        }
-    }
-
     
     return (
         <>
+        {/*  */}
             {!result ? (
                 <div className="quiz_container">
                     <span>{questions[currentQuestion].id} de {questions.length}</span>
@@ -43,31 +26,22 @@ function Quiz(){
                             key={option}
                             onClick={() => {
                                 checkAnswer(option)
+                                handleQuestion()
                             }}
                         >
                             {option}
                         </button>
                     ))}
-                    <button 
-                        className="next"
-                        onClick={handleQuestion}
-                    >
-                        {currentQuestion === questions.length - 1 ? "Finalizar" : "Próxima >>"}
-                    </button>
                 </div>
-                
             ) : (
                 <div className="result_container">
                     <img src="https://img.icons8.com/clouds/100/test-passed.png" alt="" />
                     <h1>Você teve <br/> {answers.filter(ans => ans===true).length} acertos!</h1>
-                    <Link to="/">
-                        <button onClick={() => console.log(answers)}>Tentar outra vez!</button>
-                    </Link>
+                    <button onClick={backToHome}>Tentar outra vez!</button>
                 </div>
             )}
         </>
     )
-   
 }
 
 export default Quiz
